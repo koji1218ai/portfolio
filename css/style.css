@@ -95,20 +95,40 @@ header a {
 
 
 /*  スワイパー */
+/* html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+} */
 main {
   color:gray;
 }
+
 .swiper-container {
   width: 90%;
-  height: 500px;
+  height: 510px;
   background-color: blue;
-
 }
-.swiper-slide {
-  /* width: 80%; */
+
+.swiper-wrapper {
+  /* position: relative; */
+  /* width: 100%; */
   height: 100%;
-  font-size: 18px;
-  background: #fff;
+  /* z-index: 1; */
+  display: flex;
+}
+
+.swiper-slide {
+  background-color: green;
+  width: 90%;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,19 +142,16 @@ main {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background-color: green;
 }
 .swiper-slide img{
-    width: 100%;
-    height: 440px;
-    background-size: cover;
-
+    width: 80%;
+    height: 450px;
 }
 .swiper-slide p {
   position: relative;
   color: white;
-  top: 0%;
-  left: 53%;
+  top: 10%;
+  left: 48%;
   font-size: 50px;
   font-family: 'Abel', sans-serif;
 
