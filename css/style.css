@@ -15,7 +15,7 @@ header {
 
 header h1 {
   font-size: 50px;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px;
 
 }
 
@@ -158,6 +158,103 @@ main {
 }
 /*  スワイパー終了 */
 
-.skill{
-  height: 80vh;
+
+
+
+h2 {
+  font-size: 50px;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  margin: 40px 100px;
+  border-bottom: green solid 5px;
+  padding-left: 40px;
+  width: 20%;
 }
+/* イラスト回転スライド */
+section {
+  background: rgba(138, 4, 26, 0.726);
+  padding: 50px 0;
+  height: 50vh;
+} 
+
+.skill-container {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 230px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  background: white;
+  border-radius: 30%;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background: white;
+  border-radius: 30%;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background: white;
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+}
+
+/* 画像サイズ */
+.carousel img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+}
+
+.next, .prev {
+  color: #444;
+  position: absolute;
+  top: 850px;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  top: 104px;
+  box-shadow: 0 1px 0 #999;
+}
+.next { right: 5em; }
+.prev { left: 5em; }
+/* イラスト回転スライド終了 */
+
+
+
