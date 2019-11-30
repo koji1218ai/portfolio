@@ -154,6 +154,7 @@ main {
   left: 48%;
   font-size: 50px;
   font-family: 'Abel', sans-serif;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 
 }
 /*  スワイパー終了 */
