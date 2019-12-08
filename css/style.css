@@ -47,33 +47,13 @@ header a {
 }
 
 /* ハンバーガーメニュー */
-/* .hamburger_button * {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  font: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  -moz-appearance: none;
-  appearance: none;
-  text-align: left;
-  text-decoration: none;
-  list-style: none;
-} */
-
 .hamburger_button {
   display: block;
-  /* padding: 0; */
   width: 42px;
   height: 26px;
   position: relative;
   background: none;
   border: none;
-  /* text-align: center; */
-  /* letter-spacing: 0.1em; */
   cursor: pointer;
   outline: none;
 }
@@ -518,11 +498,12 @@ font-size: 1em;
   margin-top: 50px;
 }
 .prof {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 50px 120px 50px;
+  padding: 60px 0px 120px 0px;
+  margin: 0 auto;
 }
 
 .prof h3,h4 {
@@ -602,9 +583,4 @@ font-size: 1em;
 .travel {
   margin-left: 115px;
 }
-
 /* profile終了 */
-
-swiper-button-next {
-  right: 0;
-}
