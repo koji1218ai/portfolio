@@ -6,123 +6,227 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/reset.css">
-
+  <!-- swiper リンク -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
+  <!-- font style リンク -->
   <link href="https://fonts.googleapis.com/css?family=Abel|Permanent+Marker&display=swap" rel="stylesheet">
-
+  <!-- iconのリンク -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- animationのリンク -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css">
+
   <link rel="stylesheet" href="./css/style.css">
   <title>My Portfolio</title>
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <h1>Portfolio</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">AboutMe</a></li>
-          <li><a href="#work">Works</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="main">
+      <header>
+        <h1 id="top">Portfolio</h1>
+        <nav>
+          <ul class="menu">
+            <li><a class="prf">AboutMe</a></li>
+            <li><a class="works">Works</a></li>
+            <li><a class="skills">Skills</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div id="toggle" class="js-hamburger hamburger">
-      <span></span>
+      <div class="hamburgers">
+        <div class="hamburger_bg"></div>
+        <button type="button" class="hamburger_button">
+          <span class="hamburger_bar hamburger_bar1"></span>
+          <span class="hamburger_bar hamburger_bar2"></span>
+          <span class="hamburger_bar hamburger_bar3"></span>
+          <span class="hamburger_text hamburger_text">MENU</span>
+          <span class="hamburger_close hamburger_text">CLOSE</span>
+        </button>
+        <nav class="hamburger_nav_wrapper">
+          <ul class="hamburger_nav">
+            <li>
+              <a class="top">Top ---------------- トップ</a>
+            </li>
+            <li>
+              <a class="skills">Skills -------------- 技術</a>
+            </li>
+            <li>
+              <a class="works">Works -------------- 作品</a>
+            </li>
+            <li>
+              <a class="prf">Profile ----------- 自己紹介</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <!-- Swiper -->
+      <main>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <p class="canada">Canada</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="cuba">Cuba</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="Hokkaido">Hokkaido</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="netherland">netherland</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="netherland2">netherland</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="Okinawa">Okinawa</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="Philippine">Philippine</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="Thailand">Thailand</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="Thailand2">Thailand</p>
+            </div>
+
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </main>
     </div>
 
 
 
-    <!-- Swiper -->
-    <main>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <p>Canada</p>
-            <img src="./img/travel/canada.jpg">
+    <div class="skill-ctn">
+      <h2>Skills <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
+      <section>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="item css"></div>
+            <div class="item html"></div>
+            <div class="item js"></div>
+            <div class="item php"></div>
+            <div class="item sass"></div>
+            <div class="item word"></div>
           </div>
-
-          <div class="swiper-slide">
-            <p>Cuba</p>
-            <img src="./img/travel/cuba.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>Hokkaido</p>
-            <img src="./img/travel/hokkaido.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>netherland</p>
-            <img src="./img/travel/netherland.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>netherland</p>
-            <img src="./img/travel/netherland2.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>Okinawa</p>
-            <img src="./img/travel/okinawa.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>Philippine</p>
-            <img src="./img/travel/phili.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>Thailand</p>
-            <img src="./img/travel/thai.jpg">
-          </div>
-
-          <div class="swiper-slide">
-            <p>Thailand</p>
-            <img src="./img/travel/thailand.jpg">
-          </div>
-
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </main>
+        <div class="next">Next</div>
+        <div class="prev">Prev</div>
+      </section>
+    </div>
 
+    <h2 id="works">Works <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
+    <div class="panels">
 
-    <h2>Skill</h2>
-    <section>
-      <div class="skill-container">
-        <div class="carousel">
-          <div class="item a"><img src="../portfolio/img/skill/CSS5.jpeg" alt=""></div>
-          <div class="item b"><img src="../portfolio/img/skill/html5.png" alt=""></div>
-          <div class="item c"><img src="../portfolio/img/skill/js.jpeg" alt=""></div>
-          <div class="item d"><img src="../portfolio/img/skill/php.png" alt=""></div>
-          <div class="item e"><img src="../portfolio/img/skill/SASS.png" alt=""></div>
-          <div class="item f"><img src="../portfolio/img/skill/wordpress.jpeg" alt=""></div>
+      <div class="panel panel1 pnl-style">
+        <p>Java Script</p>
+        <p>light Game</p>
+        <div class="btn">
+          <a href="../selfstudy/densyougiku.html">
+            <button type="button">こちらをクリック</button>
+          </a>
+          <p class="btn-p">沖縄の電照菊、キクミネーションを<br>おみくじ形式でゲームにしました！</p>
         </div>
       </div>
-      <div class="next">Next</div>
-      <div class="prev">Prev</div>
-    </section>
 
+      <div class="panel panel2 pnl-style">
+        <p>html / css</p>
+        <p style="padding-top: 25px;">Hokkaido</p>
+        <div class="btn">
+          <a href="../selfstudy/hokkaido.html">
+            <button type="button">こちらをクリック</button>
+          </a>
+          <p class="btn-p">北海道の大自然を覗いてみませんか？<br>写真とともにお届けします。</p>
+        </div>
+      </div>
 
+      <div class="panel panel3 pnl-style">
+        <p>html / css / jQuery</p>
+        <p style="padding-bottom: 25px;">Okinawa</p>
+        <div class="btn">
+          <a href="../selfstudy/okinawa.html">
+            <button type="button">こちらをクリック</button>
+          </a>
+          <p class="btn-p">ライブラリを使って動きのある<br>サイトになっています。<br>沖縄の独特な文化をご紹介します。</p>
+        </div>
+      </div>
+      <div class="panel panel4 pnl-style">
+        <p>Sass / js / html / css</p>
+        <p style="padding-bottom: 10px;">JS framework</p>
+        <div class="btn">
+          <a href="../sushitarou/index.html">
+            <button type="button">こちらをクリック</button>
+          </a>
+          <p class="btn-p">Sassを使ったチーム開発。<br>今人気の３大フレームワーク<br>を紹介します。</p>
+        </div>
+      </div>
+      <div class="panel panel5 pnl-style">
+        <p>html / css / js</p>
+        <p style="padding-bottom: 10px;">Real Estate</p>
+        <div class="btn">
+          <a href="../teamAandS/index.html">
+            <button type="button">こちらをクリック</button>
+          </a>
+          <p class="btn-p">沖縄に物件についての<br>
+            webサイトをチームで作りました。<br>
+            あなたにぴったりの物件が<br>見つかるかも知れません！</p>
+        </div>
+      </div>
+    </div>
 
+    <h2 id="prf" class="prof-h2">Profile <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
+    <div class="prof">
+      <div class="profile">
+        <div class="prof-box">
+          <img class="img-left" src="./img/prof.jpg" alt="">
+          <h3 class="name">Kojima Ai</h3>
+        </div>
+        <p>ドラッグストアの店員からカナダ留学。<br>その後プログラマーに興味を持ち1から学ぶ。<br>プログラミング学校に通い、<br>日々勉強やweb制作に没頭している。</p>
+      </div>
 
+      <div class="travel">
+        <h4>Travel</h4>
+        <p><a>Okinawa</a></p>
+        <p><a>Philippine</a></p>
+        <p><a>Thailand</a></p>
+        <p><a>Canada</a></p>
+      </div>
 
-    <div class="works"></div>
+      <div class="hobby">
+        <h4>Hobby</h4>
+        <p><a>music</a></p>
+        <p><a>traveling</a></p>
+        <p><a>studying</a></p>
+        <p><a>programming</a></p>
+      </div>
 
+      <div class="contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:picoropit@gmail.com"><i class="far fa-envelope"></i> picoropit@gmail.com</a></p>
+        <p><a href="https://github.com/koji1218ai"><i class="fab fa-github"></i> koji1218ai</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100004394914416"><i class="fab fa-facebook-square"></i> Ai
+            Kojima</a></p>
+      </div>
+    </div>
 
-
-
-    <div class="prof"></div>
-    <div class="contact"></div>
-    <footer></footer>
   </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
