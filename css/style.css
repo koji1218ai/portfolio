@@ -857,7 +857,6 @@ main {
 
 /* works */
 .panels {
-  min-height: 85vh;
   overflow: scroll;
 }
 
