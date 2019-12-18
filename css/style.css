@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body{
   margin:  0 auto;
+  width: 100%;
 }
 
 .container {
@@ -21,9 +22,8 @@ header {
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 312%;
   padding: 30px 0px;
-
 }
 
 .menu {
@@ -33,12 +33,8 @@ header h1 {
 
 .menu li {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 153%;
   cursor: pointer;
-}
-
-header nav {
-  margin-left: 30%;
 }
 
 header a {
@@ -135,8 +131,8 @@ header a {
 /* position */
 .hamburgers .hamburger_button {
   position: fixed;
-  top: 46px;
-  right: 25px;
+  top: 5.5%;
+  right: 20px;
   z-index: 1001;
 }
 .hamburgers a {
@@ -258,20 +254,20 @@ main {
 
 /* サブタイトル スタイル*/
 h2 {
-  font-size: 60px;
+  font-size: 368%;
   color: black;
   font-family: 'Permanent Marker', cursive;
   background: linear-gradient(transparent 30%, yellow 30%);
   border-radius: 10px;
   margin: 20px auto;
-  width: 25%;
+  width: 31%;
   text-align: center;
   padding-bottom: 12px;
 }
 
 /* icon スタイル */
 .star{
-  font-size: 70px;
+  font-size: 130%;
 }
 
 /* aタグの設定 */
@@ -282,11 +278,11 @@ a {
 
 
 /* イラスト回転スライド */
-.skill-ctn{
+section {
   height: 100vh;
   padding-top: 10vh;
 }
-section {
+.section {
   padding-top: 20vh;
   font: 15px/20px Arial, sans-serif;
   position: relative;
@@ -376,7 +372,7 @@ section {
   position: absolute;
   top: 56%;
   font-size: 20px;
-  padding: 14px 30px;;
+  padding: 14px;
   cursor: pointer;
   background: rgba(204, 204, 204, 0.438);
   border-radius: 5px;
@@ -391,8 +387,8 @@ section {
   top: 56.5%;
   box-shadow: 0 1px 0 #999;
 }
-.next { right: 7em; }
-.prev { left: 7em; }
+.next { right: 10%; }
+.prev { left: 10%; }
 
 /* イラスト回転スライド終了 */
 
@@ -403,6 +399,7 @@ section {
 /* Works パネル*/
 .panels {
   min-height: 100vh;
+  min-width: 100%;
   overflow: hidden;
   display: flex; }
 
@@ -465,12 +462,26 @@ font-size: 1em;
   font-size: 0.8em;
 }
 
-.btn button {
+.btn .button {
   font-size: 16px;
-  padding: 5%;
+  padding: 4%;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 20px;
+  background-color: white;
+  border: solid rgba(0,0,0,.21);
+  border-width: 1px 1px 4px;
+}
+.btn a {
+  color: black;
+}
+.btn .button:hover{
+background-color: rgba(255, 255, 255, 0.842);
+}
+.btn .button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
 }
 .btn {
   display: flex;
@@ -483,7 +494,7 @@ font-size: 1em;
 }
 .panel .btn-p {
   text-shadow: 0 0 4px rgba(0,0,0,0.72), 0 0 14px rgba(0,0,0,0.45);
-  font-size: 0.9em;
+  font-size: 80%;
 }
 
 .panel.open {
@@ -501,7 +512,7 @@ font-size: 1em;
   width: 90%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 60px 0px 120px 0px;
   margin: 0 auto;
 }
@@ -531,9 +542,7 @@ font-size: 1em;
 
 .profile .name {
   font-size: 30px;
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
+  margin: 42px 0px 0px 30px;
 }
 
 .profile .icon {
@@ -545,32 +554,38 @@ font-size: 1em;
   margin: 0px 10px 0px 10px;
 }
 
+.flex p {
+  line-height: 40px;
+}
+.last-flex p {
+  line-height: 45px;
+}
+
 .profile p {
   color: gray;
   line-height: 25px;
-  margin: 10px 0px 0px 58px;
+  margin: 15px 0px 0px 58px;
   font-size: 15px;
 }
 
 .travel,
 .hobby,
 .contact {
-  width: 18%;
+  width: 16%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-top: 30px;
 }
 
 .contact {
   width: 20%;
-  margin-left: 20px;
 }
 
 .travel h4,
 .hobby h4,
 .contact h4 {
   font-size: 30px;
+  padding: 11px 0px 64px 0px;
 }
 
 .travel a,
@@ -579,8 +594,213 @@ font-size: 1em;
   font-size: 18px;
   color: gray;
 }
-
 .travel {
-  margin-left: 115px;
+  margin-left: 5%;
 }
 /* profile終了 */
+
+@media screen and (max-width: 1000px) {
+  body{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 260%;
+  }
+  h2 {
+    font-size: 288%;
+  }
+  a{
+    font-size: 90%;
+  }
+  .next { right: 2%; 
+  }
+  .prev { left: 2%; 
+  }
+  .panel .btn-p {
+    font-size: 65%;
+}
+.profile p {
+  margin: 6% 0px 0px 5%;
+}
+.prof br {
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+  body{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .next { right: 15%; }
+  .prev { left: 15%; }
+  .next, .prev {
+  top: 3%;
+  font-size: 15px;
+  padding: 11px 13px;
+  }
+  h2 {
+    font-size: 200%;
+  }
+  .star {
+    font-size: 90%;
+  }
+
+  .panels br {
+    display: none;
+  }
+  .panel p {
+    font-size: 2em;
+}
+
+
+.prof-box {
+  height: 120px;
+}
+.profile .name {
+  margin-left: 0;
+}
+.prof-box img {
+  display: none;
+}
+.travel {
+  margin-left: 3%;
+}
+.profile p {
+  margin-left: 5%;
+}
+.last-flex p {
+  line-height: 32px;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+  body{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  /* swiper */
+  .swiper-container {
+    width: 90%;
+    height: 70%;
+}
+.main {
+  height: 500px;
+}
+.num {
+  display: none;
+}
+
+
+/* skills */
+section {
+  padding: 0px;
+  height: 415px;
+}
+h2 {
+  font-size: 165%;
+}
+.star {
+  font-size: 80%;
+}
+.carousel-container {
+  width: 25%;
+  height: 28px;
+}
+.item {
+  width: 130px;
+  height: 130px;
+}
+.css, .html, .js, .php, .sass, .word {
+  background-size: 100px 100px;
+}
+.css {
+  transform: rotateY(0deg) translateZ(150px);
+}
+.html {
+  transform: rotateY(60deg) translateZ(150px);
+}
+.js {
+  transform: rotateY(120deg) translateZ(150px);
+}
+.php {
+  transform: rotateY(180deg) translateZ(150px);
+}
+.sass {
+  transform: rotateY(240deg) translateZ(150px);
+} 
+.word {
+  transform: rotateY(300deg) translateZ(150px);
+}
+.next:active, .prev:active {
+  top: 5.5%;
+}
+
+/* works */
+.btn .button {
+  font-size: 10px;
+}
+.panel p {
+  font-size: 1.5em;
+}
+.panel.open-active > *:first-child {
+  font-size: 65%;
+}
+
+
+/* prof */
+.prof {
+  display: block;
+  width: 80%;
+  padding-bottom: 60px;
+}
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile p {
+  margin: 0px;
+}
+.prof-box {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.travel, .hobby, .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+.travel h4, .hobby h4, .contact h4 {
+  margin-bottom: 5%;
+}
+.flex {
+  margin-left: 25%;
+}
+.last-flex {
+  margin-left: 20%;
+}
+.flex p, .last-flex p {
+  line-height: 25px;
+}
+
+}

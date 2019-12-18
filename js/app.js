@@ -18,7 +18,7 @@ $(function () {
   });
 
   $(".skills").on("click", function () {
-    $("html,body").animate({ scrollTop: $('.skill-ctn').offset().top }, 650);
+    $("html,body").animate({ scrollTop: $('section').offset().top }, 650);
   });
 
   $(".works").on("click", function () {

@@ -105,7 +105,7 @@
 
           </div>
           <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination num"></div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -114,10 +114,10 @@
     </div>
 
 
-
-    <div class="skill-ctn">
+    <!-- skills -->
+    <section>
       <h2>Skills <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
-      <section>
+      <div class="section">
         <div class="carousel-container">
           <div class="carousel">
             <div class="item css"></div>
@@ -128,11 +128,13 @@
             <div class="item word"></div>
           </div>
         </div>
-        <div class="next">Next</div>
-        <div class="prev">Prev</div>
-      </section>
-    </div>
+        <div class="next">Next →</div>
+        <div class="prev">← Prev</div>
+      </div>
+    </section>
 
+
+    <!-- works -->
     <h2 id="works">Works <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
     <div class="panels">
 
@@ -140,8 +142,8 @@
         <p>Java Script</p>
         <p>light Game</p>
         <div class="btn">
-          <a href="https://sad-khorana-1b9c54.netlify.com/densyougiku.html">
-            <button type="button">こちらをクリック</button>
+          <a href="https://sad-khorana-1b9c54.netlify.com/densyougiku.html" class="button">
+            こちらをクリック
           </a>
           <p class="btn-p">沖縄の電照菊、キクミネーションを<br>おみくじ形式でゲームにしました！</p>
         </div>
@@ -151,8 +153,8 @@
         <p>html / css</p>
         <p style="padding-top: 25px;">Hokkaido</p>
         <div class="btn">
-          <a href="https://sad-khorana-1b9c54.netlify.com/hokkaido.html">
-            <button type="button">こちらをクリック</button>
+          <a href="https://sad-khorana-1b9c54.netlify.com/hokkaido.html" class="button">
+            こちらをクリック
           </a>
           <p class="btn-p">北海道の大自然を覗いてみませんか？<br>写真とともにお届けします。</p>
         </div>
@@ -162,8 +164,8 @@
         <p>html / css / jQuery</p>
         <p style="padding-bottom: 25px;">Okinawa</p>
         <div class="btn">
-          <a href="https://vigorous-thompson-059a4d.netlify.com/okinawa.html">
-            <button type="button">こちらをクリック</button>
+          <a href="https://vigorous-thompson-059a4d.netlify.com/okinawa.html" class="button">
+            こちらをクリック
           </a>
           <p class="btn-p">ライブラリを使って動きのある<br>サイトになっています。<br>沖縄の独特な文化をご紹介します。</p>
         </div>
@@ -172,8 +174,8 @@
         <p>Sass / js / html / css</p>
         <p style="padding-bottom: 10px;">JS framework</p>
         <div class="btn">
-          <a href="https://eloquent-panini-0cb59d.netlify.com/">
-            <button type="button">こちらをクリック</button>
+          <a href="https://eloquent-panini-0cb59d.netlify.com/" class="button">
+            こちらをクリック
           </a>
           <p class="btn-p">Sassを使ったチーム開発。<br>今人気の３大フレームワーク<br>を紹介します。</p>
         </div>
@@ -182,8 +184,8 @@
         <p>html / css / js</p>
         <p style="padding-bottom: 10px;">Real Estate</p>
         <div class="btn">
-          <a href="https://confident-tereshkova-a43a3e.netlify.com">
-            <button type="button">こちらをクリック</button>
+          <a href="https://confident-tereshkova-a43a3e.netlify.com" class="button">
+            こちらをクリック
           </a>
           <p class="btn-p">沖縄に物件についての<br>
             webサイトをチームで作りました。<br>
@@ -192,6 +194,8 @@
       </div>
     </div>
 
+
+    <!-- profile -->
     <h2 id="prf" class="prof-h2">Profile <i class="fas fa-star-and-crescent faa-tada animated star"></i></h2>
     <div class="prof">
       <div class="profile">
@@ -204,26 +208,32 @@
 
       <div class="travel">
         <h4>Travel</h4>
-        <p><a>Okinawa</a></p>
-        <p><a>Philippine</a></p>
-        <p><a>Thailand</a></p>
-        <p><a>Canada</a></p>
+        <div class="flex">
+          <p><a>Okinawa</a></p>
+          <p><a>Philippine</a></p>
+          <p><a>Thailand</a></p>
+          <p><a>Canada</a></p>
+        </div>
       </div>
 
       <div class="hobby">
         <h4>Hobby</h4>
-        <p><a>music</a></p>
-        <p><a>traveling</a></p>
-        <p><a>studying</a></p>
-        <p><a>programming</a></p>
+        <div class="flex">
+          <p><a>music</a></p>
+          <p><a>traveling</a></p>
+          <p><a>studying</a></p>
+          <p><a>programming</a></p>
+        </div>
       </div>
 
       <div class="contact">
         <h4>Contact</h4>
-        <p><a href="mailto:picoropit@gmail.com"><i class="far fa-envelope"></i> picoropit@gmail.com</a></p>
-        <p><a href="https://github.com/koji1218ai"><i class="fab fa-github"></i> koji1218ai</a></p>
-        <p><a href="https://www.facebook.com/profile.php?id=100004394914416"><i class="fab fa-facebook-square"></i> Ai
-            Kojima</a></p>
+        <div class="last-flex">
+          <p><a href="mailto:picoropit@gmail.com"><i class="far fa-envelope"></i> picoropit@gmail.com</a></p>
+          <p><a href="https://github.com/koji1218ai"><i class="fab fa-github"></i> koji1218ai</a></p>
+          <p><a href="https://www.facebook.com/profile.php?id=100004394914416"><i class="fab fa-facebook-square"></i> Ai
+              Kojima</a></p>
+        </div>
       </div>
     </div>
 
