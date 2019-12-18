@@ -190,6 +190,9 @@ header a {
   color: #21328A;
   cursor: pointer;
 }
+.font-rp {
+  display: none;
+}
 /* ハンバーガーメニュー終了 */
 
 
@@ -260,7 +263,7 @@ h2 {
   background: linear-gradient(transparent 30%, yellow 30%);
   border-radius: 10px;
   margin: 20px auto;
-  width: 31%;
+  width: 32%;
   text-align: center;
   padding-bottom: 12px;
 }
@@ -302,6 +305,8 @@ section {
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s;
+  display: flex;
+  justify-content: center;
 }
 
 .item {
@@ -508,6 +513,7 @@ background-color: rgba(255, 255, 255, 0.842);
 .prof-h2{
   margin-top: 50px;
 }
+
 .prof {
   width: 90%;
   height: 100%;
@@ -538,6 +544,7 @@ background-color: rgba(255, 255, 255, 0.842);
   width: 150px;
   height: 150px;
   margin-left: 35px;
+  object-fit: cover;
 }
 
 .profile .name {
@@ -694,26 +701,26 @@ background-color: rgba(255, 255, 255, 0.842);
     width: 100%;
   }
 
+  h2 {
+    width: 48%;
+  }
+
   /* swiper */
   .swiper-container {
     width: 90%;
     height: 70%;
 }
 .main {
-  height: 500px;
+  height: 465px;
 }
 .num {
   display: none;
 }
 
-
 /* skills */
 section {
   padding: 0px;
   height: 415px;
-}
-h2 {
-  font-size: 165%;
 }
 .star {
   font-size: 80%;
@@ -767,7 +774,7 @@ h2 {
 .prof {
   display: block;
   width: 80%;
-  padding-bottom: 60px;
+  padding: 0px 0px 60px 0px;
 }
 .profile {
   width: 100%;
@@ -802,5 +809,64 @@ h2 {
 .flex p, .last-flex p {
   line-height: 25px;
 }
+}
 
+@media screen and (max-width: 375px) {
+  body{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  /* header */
+  .fix {
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    top: 0px;
+  }
+  .hamburgers .hamburger_nav_wrapper {
+    width: 35%;
+    height: 50%;
+  }
+  .hamburgers .hamburger_nav {
+    padding: 93px 30px;
+  }
+  .hamburgers .hamburger_nav li {
+    margin-bottom: 28px;
+  }
+.font-pc {
+  display: none;
+}
+.font-rp {
+  display: block;
+}
+
+/* main */
+main {
+  margin-top: 100px;
+}
+.main {
+  height: 350px;
+}
+
+/* skills */
+.next {right: 8%;}
+.prev {left: 8%;}
+
+/* works */
+.panels {
+  min-height: 85vh;
+}
+/* prof */
+.prof {
+  padding: 0px;
+}
+.travel, .hobby, .contact {
+  width: 40%;
+}
+.flex {
+  margin-left: 40%;
+}
 }
