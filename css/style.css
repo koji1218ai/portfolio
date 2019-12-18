@@ -858,7 +858,9 @@ main {
 /* works */
 .panels {
   min-height: 85vh;
+  overflow: scroll;
 }
+
 /* prof */
 .prof {
   padding: 0px;
