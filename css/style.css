@@ -451,7 +451,7 @@ font-size: 1em;
   color: black;
 }
 .btn .button:hover {
-background-color: rgba(255, 255, 255, 0.842);
+background-color: rgba(255, 255, 255, 0.897);
 }
 .btn .button:active {
   transform: translateY(3px);
@@ -679,6 +679,7 @@ background-color: rgba(255, 255, 255, 0.842);
   }
   .profile .name {
     margin-left: 0;
+    margin: 30px 0px 0px 30px;
   }
   .prof-box img {
     display: none;
@@ -692,6 +693,9 @@ background-color: rgba(255, 255, 255, 0.842);
   .last-flex p {
     line-height: 32px;
   }
+  .travel h4, .hobby h4, .contact h4 {
+    padding: 0px 0px 64px 0px;
+}
 }
 
 @media screen and (max-width: 500px) {
